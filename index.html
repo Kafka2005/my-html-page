@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чистые кнопки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            width: 100%;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-basis: 30%;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .btn:active {
+            background-color: #555;
+        }
+
+        .btn.left {
+            align-self: flex-start;
+        }
+
+        .btn.center {
+            align-self: center;
+        }
+
+        .btn.right {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Распределенные кнопки</h1>
+    </div>
+    <div class="buttons-container">
+        <button class="btn left">Кнопка 1</button>
+        <button class="btn center">Кнопка 2</button>
+        <button class="btn right">Кнопка 3</button>
+    </div>
+</body>
+</html>
